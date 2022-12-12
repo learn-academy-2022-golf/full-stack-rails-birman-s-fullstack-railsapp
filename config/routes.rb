@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+root 'post_blog#index'
+
+get 'index' => 'post_blog#index'
+
+#  get 'index/:id' => 'post_blog#show', as : 'index'
 end
+
+
+# Blog.create title:"Top 5 Destinations to Visit" , content:"
