@@ -1,4 +1,6 @@
 <h1> Blog Babbyyyy</h1>
+<ul>
 <% @blogs.map do |blog| %>
-    <%= blog.title %>
+   <li><%= link_to blog.title, blog_path(blog.id)%></li>
   <% end %>
+</ul>
