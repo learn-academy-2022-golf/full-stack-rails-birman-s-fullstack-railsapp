@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 root 'post_blog#index'
 
 get 'blogs' => 'post_blog#index', as: 'blogs'
- get 'blogs/:id' => 'post_blog#show', as: 'blog'
+get 'blogs/new' => 'post_blog#new', as: 'new_blog'
+get 'blogs/:id' => 'post_blog#show', as: 'blog'
+
 end
 
 
