@@ -2,9 +2,8 @@ Rails.application.routes.draw do
 
 root 'post_blog#index'
 
-get 'index' => 'post_blog#index'
-
-#  get 'index/:id' => 'post_blog#show', as : 'index'
+get 'blogs' => 'post_blog#index', as: 'blogs'
+#  get 'blogs/:id' => 'post_blog#show', as : 'blog'
 end
 
 
